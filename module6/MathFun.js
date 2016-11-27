@@ -5,7 +5,7 @@ var Maxtime=1000;
 //(call takes random amount of time)
 var evenDoubler=function(v,callback){
     {
-    var waitime=Math.floor(Math.random()*Maxtime+1);
+    var waitime=Math.floor(45*Maxtime+1);
     
     if(v%2){
     setTimeout(function(){
@@ -18,7 +18,7 @@ else
 {
     
     setTimeout(function() {
-        callback(null,v*2,waitime)
+        callback(null,v*2,waitime);
     },waitime);
 }
         
